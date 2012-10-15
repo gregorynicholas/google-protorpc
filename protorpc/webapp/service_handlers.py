@@ -110,7 +110,7 @@ from .. import protourlencode
 from .. import registry
 from .. import remote
 from .. import util
-from . import forms
+import forms
 
 __all__ = [
     'Error',

@@ -21,9 +21,9 @@ __author__ = 'rafek@google.com (Rafe Kaplan)'
 
 import itertools
 
-from google.net.proto2.python.public import descriptor
-from google.net.proto2.python.public import message
-from google.net.proto2.python.public import reflection
+from _google.net.proto2.python.public import descriptor
+from _google.net.proto2.python.public import message
+from _google.net.proto2.python.public import reflection
 
 import util
 

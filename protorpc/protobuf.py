@@ -37,7 +37,7 @@ import cStringIO
 
 import messages
 # TODO(rafek): Do something about this dependency maybe.
-from google.net.proto import ProtocolBuffer
+from _google.net.proto import ProtocolBuffer
 
 
 __all__ = ['ALTERNATIVE_CONTENT_TYPES',
