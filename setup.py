@@ -20,5 +20,8 @@ core.setup(
   name='google-protorpc',
   version='0.1.1',
   packages=['protorpc'],
-  url='https://github.com/gregorynicholas/google-protorpc'
+  url='https://github.com/gregorynicholas/google-protorpc',
+  install_requires=[],
+  extras_require={},
+  include_package_data=True,
 )
