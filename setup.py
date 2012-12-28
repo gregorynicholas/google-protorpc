@@ -36,7 +36,7 @@ core.setup(
     'protorpc',
   ],
   scripts=[
-    'gen_protorpc',
+    'gen_protorpc.py',
   ],
   install_requires=[
   ],
