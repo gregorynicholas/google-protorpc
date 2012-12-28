@@ -18,7 +18,8 @@ from distutils import core
 
 core.setup(
   name='google-protorpc',
-  version='0.1.1',
+  version='1.0.0',
+  url='https://github.com/gregorynicholas/google-protorpc',
   packages=[
     'protorpc',
     'protorpc._google',
@@ -29,9 +30,14 @@ core.setup(
     'protorpc._google.net.proto2.python',
     'protorpc._google.net.proto2.python.internal',
     'protorpc._google.net.proto2.python.public',
-    'protorpc._google.pyglib'],
-  url='https://github.com/gregorynicholas/google-protorpc',
-  install_requires=[],
-  extras_require={},
-  include_package_data=True,
+    'protorpc._google.pyglib',
+  ],
+  namespace_packages=[
+    'protorpc',
+  ],
+  scripts=[
+    'gen_protorpc',
+  ],
+  install_requires=[
+  ],
 )
