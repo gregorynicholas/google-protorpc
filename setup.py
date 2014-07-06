@@ -31,6 +31,7 @@ core.setup(
     'protorpc._google.net.proto2.python.internal',
     'protorpc._google.net.proto2.python.public',
     'protorpc._google.pyglib',
+    'protorpc.wsgi',
   ],
   namespace_packages=[
     'protorpc',
