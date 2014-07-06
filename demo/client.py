@@ -4,9 +4,8 @@ from protorpc import transport
 import hello_service
 
 
-hello_remote = transport.HttpTransport('http://localhost:8000/HelloService')
-rpc_method_info = remote.get_remote_method_info(hello_service.HelloService.Hello)
+hello_remote = hello_service.HelloService.Stub(
+    transport.HttpTransport('http://localhost:8000/HelloService'))
 request = hello_service.HelloRequest(my_name='Matt')
-rpc = hello_remote.send_rpc(rpc_method_info, request)
 
-print rpc.response.hello
+print hello_remote.Hello(request).hello
